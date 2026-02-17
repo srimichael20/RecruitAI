@@ -1,5 +1,12 @@
 Perfectly AI is an innovative, AI-powered recruiting agency platform designed to streamline and enhance the hiring process. By leveraging advanced AI agents for intake, vision analysis, candidate classification, and seamless integration, Perfectly AI offers a modern solution for recruiters and hiring managers.
 
+
+## Screenshots
+
+<img src="app.png" width=800  height=500/>
+<img src="app1.png" width=800 height=500/>
+
+
 ## 🚀 Features
 
 The platform is built around a suite of intelligent agents and a comprehensive dashboard:
