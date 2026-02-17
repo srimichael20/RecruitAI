@@ -1,0 +1,123 @@
+.agent-card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.agent-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--agent-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.agent-card:hover::before,
+.agent-card.active::before {
+    opacity: 1;
+}
+
+.agent-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.agent-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--agent-color) 12%, transparent);
+    color: var(--agent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.agent-card:hover .agent-icon-wrap {
+    background: var(--agent-color);
+    color: white;
+    box-shadow: 0 0 20px color-mix(in srgb, var(--agent-color) 30%, transparent);
+}
+
+.agent-status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: rgba(148, 163, 184, 0.06);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+
+.agent-card.active .agent-status-badge {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.2);
+    color: var(--accent-emerald);
+}
+
+.agent-card.active .status-indicator {
+    background: var(--accent-emerald);
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.agent-card.idle .agent-status-badge {
+    color: var(--text-muted);
+}
+
+.status-indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-muted);
+}
+
+.agent-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+}
+
+.agent-card-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.agent-card-stats {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-default);
+}
+
+.agent-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.agent-stat-value {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.agent-stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
