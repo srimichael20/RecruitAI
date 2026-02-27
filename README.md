@@ -44,8 +44,9 @@ Before you begin, ensure you have the following installed:
 Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
-bash
-git clone <repository-url>
+
+git clone <https://github.com/srimichael20/RecruitAI>
+
 cd recuritai
 
 
@@ -104,23 +105,25 @@ In your frontend terminal:
 bash
 npm run dev
 
+The application will be available at https://recruitai-04.vercel.app/
+
 The application will be available at http://localhost:5173.
 
-## 📂 Project Structure
+### 🧩 Folder Description
 
-
-dist/               # Production build artifacts
-node_modules/       # Frontend dependencies
-src/                # Frontend source code
-  ├── components/   # Reusable React components
-  ├── pages/        # Application pages (Dashboard, Agents, etc.)
-  ├── App.jsx       # Main React component
-  └── main.jsx      # Entry point
-backend/            # Backend commands & API
-  ├── routers/      # API endpoints (candidates, intake, vision, etc.)
-  ├── services/     # Business logic & AI integration
-  ├── models.py     # Database models
-  ├── schemas.py    # Pydantic schemas
-  ├── main.py       # FastAPI entry point
-  └── requirements.txt
+- **dist/** – Contains optimized production build files.
+- **node_modules/** – Installed frontend packages and dependencies.
+- **src/** – Main frontend source code (React).
+  - **components/** – Reusable UI components.
+  - **pages/** – Core application pages like Dashboard, Agents, etc.
+  - **App.jsx** – Root React component.
+  - **main.jsx** – Frontend entry file.
+- **backend/** – FastAPI backend handling APIs, AI logic, and database.
+  - **routers/** – API endpoint modules.
+  - **services/** – Core logic, AI models, and integrations.
+  - **models.py** – Database schema definitions.
+  - **schemas.py** – Request/response validation using Pydantic.
+  - **main.py** – Backend server entry point.
+  - **requirements.txt** – Backend dependencies list.
+  
 ---
