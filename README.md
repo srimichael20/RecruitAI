@@ -45,7 +45,7 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 
-git clone <https://github.com/srimichael20/RecruitAI>
+git clone https://github.com/srimichael20/RecruitAI.git
 
 cd recuritai
 
